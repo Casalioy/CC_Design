@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <!-- Removed the shadow filter -->
+  </defs>
+
+  <rect x="0" y="0" width="200" height="200" fill="none"/>
+
+  <!-- First path with white outline only -->
+  <path d="M150 140 L100 80 L50 140 L40 130 L100 60 L160 130 Z" fill="none" stroke="white" stroke-width="2" stroke-dasharray="500" stroke-dashoffset="500" stroke-linejoin="round" stroke-linecap="round">
+    <animate attributeName="stroke-dashoffset" from="500" to="0" dur="1.5s" begin="0.1s" fill="freeze" keyTimes="0;0.7;1" keySplines="0.25 0.1 0.25 1"/>
+  </path>
+
+  <!-- Second path with white outline only -->
+  <path d="M150 80 L130 50 L70 50 L50 80 L60 80 L80 60 L120 60 L140 80 Z" fill="none" stroke="white" stroke-width="2" opacity="0" stroke-linejoin="round" stroke-linecap="round">
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="0.85s" fill="freeze"/>
+    <animate attributeName="stroke-dasharray" from="0 500" to="500 0" dur="1.5s" begin="0.4s" fill="freeze"/>
+  </path>
+
+  <!-- Footer text in soft gray changed to white -->
+  <text x="100"
+         y="190"
+         font-family="Arial, Helvetica, sans-serif"
+         font-size="10"
+         fill="white"
+         text-anchor="middle">
+     casalioy collective est. mmxxiv
+   </text>
+</svg>
